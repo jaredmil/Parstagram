@@ -81,9 +81,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 ParseUser.logOut();
                 ParseUser currentUser = ParseUser.getCurrentUser(); // this will now be null
+                goLoginActivity();
             }
 
         });
+    }
+
+    private void goLoginActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     private void launchCamera() {

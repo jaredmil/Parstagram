@@ -39,7 +39,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:translationX="290dp"
-        android:translationY="310dp"
-        tools:text="Log out" />
+        android:text="Log out" />
 </LinearLayout>
